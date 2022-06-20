@@ -87,6 +87,8 @@ document.getElementById("start").addEventListener("click", (e) => {
   });
 
   document.addEventListener("touchmove", (e) => {
+    // stop screen drag
+    e.preventDefault();
     // location of touch
     var touchLocation = e.targetTouches[0];
 
